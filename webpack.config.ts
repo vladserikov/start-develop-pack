@@ -26,6 +26,10 @@ const config: Configuration = {
 					},
 				},
 			},
+			{
+				test: /\.(s(a|c)ss)$/,
+				use: ['style-loader', 'css-loader', 'sass-loader'],
+			},
 		],
 	},
 	resolve: {
